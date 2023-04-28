@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   width: 100%;
   height: auto;
@@ -11,9 +16,11 @@
   justify-content: center;
   align-items: center;
 }
-main{
+
+main {
   width: 100%;
 }
+
 .toolbar-container {
   display: flex;
   flex-direction: row;
@@ -51,8 +58,7 @@ main{
 }
 
 .greeting {
-  margin: 64px 27px 0px 27px;
-  
+  margin: 64px 27px 0 27px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -62,13 +68,16 @@ main{
   color: #172b4d;
 }
 
-.heading,h1,h2,h3{
+.heading,
+h1,
+h2,
+h3 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
   text-align: center;
 }
 
@@ -76,7 +85,7 @@ main{
   color: #36b37e;
 }
 
-.article p{
+.article p {
   /* position: absolute;
   width: 87.2%;
   height: 164px;
@@ -115,9 +124,11 @@ main{
 .social-media-icon:active {
   transform: scale3d(0.8, 0.8, 0.8);
 }
-.downarrow-container{
+
+.downarrow-container {
   margin-top: 83px;
 }
+
 .work-container {
   margin-left: 6.93%;
   margin-right: 7.46667%;
@@ -128,8 +139,6 @@ main{
   flex-direction: column;
   align-items: center;
 }
-
-
 
 .work-container .work-title img {
   width: 12.8%;
@@ -146,79 +155,135 @@ main{
 
 .work-cards {
   border-radius: 8px;
-  border: 2px solid #D0D9D4;
-  /* display: grid;
-  grid-template-rows: 252px 224px ; */
-  background-color: #EBF0EE;
+  border: 1px solid #d0d9d4;
+  background-color: #ebf0ee;
   display: flex;
 }
 
-.work-desc{
+.work-desc {
   background-color: white;
   border-radius: 8px;
   width: 100%;
   height: 224px;
   align-self: flex-end;
 }
-.work-desc .languages{
+
+.work-desc .languages {
   display: flex;
   justify-content: space-between;
 }
-.work-cards .work-desc p{
+
+.work-cards .work-desc p {
   margin: 16px;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  color: #3A4A42;
+  color: #3a4a42;
 }
-.work-desc .languages li{
+
+.work-desc .languages li {
   list-style: none;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   padding: 8px 12px;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  color: #3A4A42;  
+  color: #3a4a42;
 }
-.button-container{
+
+.button-container {
   display: flex;
   justify-content: center;
   margin-top: 29px;
 }
-.button-container button{
+
+.button-container button {
   padding: 12px;
   border: none;
-  color: #FFFFFF;
-  background-color: #36B37F;
+  color: #fff;
+  background-color: #36b37f;
   border-radius: 4px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   text-align: center;
 }
-.work-cards .work-desc button:hover{
+
+.work-cards .work-desc button:hover {
   background-color: #238d61;
 }
-.about-me-container{
+
+.about-me-container {
   /* width: 100%; */
   background-image: url(images/illustration\ 1-\ about\ me-mobile.svg), url(images/illustration\ 2-about\ me\ mobile.svg);
-  background-size: 18.13%,17.9%;
+  background-size: 18.13%, 17.9%;
   padding-top: 68px;
-  background-repeat: no-repeat,no-repeat;
-  background-position: 100% 7%,left bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100% 7%, left bottom;
 }
+
 .about-me-container .article {
   margin-top: 24px;
 }
-.my-skills-container{
+
+.skills-container-grid {
+  max-width: 100%;
   display: grid;
-  grid-template-rows: repeat(3,316px);
+  grid-template-rows: repeat(3, 316px);
+  grid-template-columns: 100%;
+  row-gap: 24px;
+  margin: 59px 24px 20px 24px;
+}
+
+.skills-container-each {
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+}
+
+.skill-icon {
+  margin-top: 23px;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-container-grid .skills-container-each p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+  text-align: center;
+}
+
+.skills-container-each .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 24px 17px;
+}
+
+.skills-container-each .skills li {
+  padding: 12px;
+  background-color: #fff;
+  list-style: none;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
