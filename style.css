@@ -3,114 +3,112 @@
   padding: 0;
 }
 
-@media screen and (min-width: 375px) {
-  .container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .toolbar-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 44px;
-    width: 100%;
-    height: 48px;
-  }
+.toolbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 44px;
+  width: 100%;
+  height: 48px;
+}
 
-  .toolbar-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 10.67%;
-    height: 40px;
-    right: 24px;
-    border-radius: 8px;
-  }
+.toolbar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 10.67%;
+  height: 40px;
+  right: 24px;
+  border-radius: 8px;
+}
 
-  .toolbar-container .toolbar-icon img {
-    width: 40px;
-    height: auto;
-  }
+.toolbar-container .toolbar-icon img {
+  width: 40px;
+  height: auto;
+}
 
-  .headline {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    max-width: 168.1013333333333%;
-    height: 653.32px;
-    background-image: url(header-illsutration-mobile.svg);
-    background-size: 100%;
-  }
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-width: 168.1013333333333%;
+  height: 653.32px;
+  background-image: url(header-illsutration-mobile.svg);
+  background-size: 100%;
+}
 
-  .greeting {
-    position: absolute;
-    width: 87.2%;
-    height: 211px;
-    left: 27px;
-    top: 156px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    text-align: center;
-    color: #172b4d;
-  }
+.greeting {
+  position: absolute;
+  width: 87.2%;
+  height: 211px;
+  left: 27px;
+  top: 156px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
 
-  .greeting h1 {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-  }
+.greeting h1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
 
-  .greeting span {
-    color: #36b37e;
-  }
+.greeting span {
+  color: #36b37e;
+}
 
-  .article {
-    position: absolute;
-    width: 87.2%;
-    height: 164px;
-    left: 27px;
-    top: 382px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    color: #172b4d;
-  }
+.article {
+  position: absolute;
+  width: 87.2%;
+  height: 164px;
+  left: 27px;
+  top: 382px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+}
 
-  .social-media-icon-container {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    width: 45.379%;
-    height: 19.62px;
-    left: 28%;
-    top: 568.89px;
-    margin-top: 24.85px;
-  }
+.social-media-icon-container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 45.379%;
+  height: 19.62px;
+  left: 28%;
+  top: 568.89px;
+  margin-top: 24.85px;
+}
 
-  .social-media-icon-container li {
-    list-style: none;
-  }
+.social-media-icon-container li {
+  list-style: none;
+}
 
-  .social-media-icon {
-    margin-right: 20px;
-  }
+.social-media-icon {
+  margin-right: 20px;
+}
 
-  .social-media-icon:active {
-    transform: scale3d(0.8, 0.8, 0.8);
-  }
+.social-media-icon:active {
+  transform: scale3d(0.8, 0.8, 0.8);
 }
