@@ -98,7 +98,9 @@
     top: 568.89px;
     margin-top: 24.85px;
   }
-
+  .social-media-icon-container li{
+    list-style: none;
+  }
   .social-media-icon {
     margin-right: 20px;
   }
