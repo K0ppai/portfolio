@@ -8,8 +8,11 @@
     - [Tech Stack](#tech-stack)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -69,6 +72,51 @@ Example command:
 ```sh
   npx stylelint "**/*.{css,scss}"
 ```
+### Setup
+
+Clone this repository to your desired folder:
+
+
+Example commands:
+
+```sh
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
+```
+
+### Install
+
+Install this project with:
+
+
+Example command:
+
+```sh
+  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+
+Example command:
+
+```sh
+  npm init -y
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+
+Example command:
+
+```sh
+  npx stylelint "**/*.{css,scss}"
+```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
