@@ -51,11 +51,8 @@ main{
 }
 
 .greeting {
-  position: absolute;
-  width: 87.2%;
-  height: 211px;
-  left: 27px;
-  top: 156px;
+  margin: 64px 27px 0px 27px;
+  
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -65,24 +62,26 @@ main{
   color: #172b4d;
 }
 
-.greeting h1 {
+.heading,h1,h2,h3{
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  color: #172B4D;
+  text-align: center;
 }
 
 .greeting span {
   color: #36b37e;
 }
 
-.article {
-  position: absolute;
+.article p{
+  /* position: absolute;
   width: 87.2%;
   height: 164px;
   left: 27px;
-  top: 382px;
+  top: 382px; */
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -90,6 +89,7 @@ main{
   line-height: 28px;
   text-align: center;
   color: #172b4d;
+  margin: 15px 27px;
 }
 
 .social-media-icon-container {
@@ -129,15 +129,7 @@ main{
   align-items: center;
 }
 
-.work-title > p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  color: #172B4D;
-}
+
 
 .work-container .work-title img {
   width: 12.8%;
@@ -200,7 +192,7 @@ main{
   justify-content: center;
   margin-top: 29px;
 }
-.work-cards .work-desc button{
+.button-container button{
   padding: 12px;
   border: none;
   color: #FFFFFF;
@@ -214,4 +206,15 @@ main{
 }
 .work-cards .work-desc button:hover{
   background-color: #238d61;
+}
+.about-me-container{
+  /* width: 100%; */
+  background-image: url(images/illustration\ 1-\ about\ me-mobile.svg), url(images/illustration\ 2-about\ me\ mobile.svg);
+  background-size: 18.13%,17.9%;
+  padding-top: 68px;
+  background-repeat: no-repeat,no-repeat;
+  background-position: 100% 7%,left bottom;
+}
+.about-me-container .article {
+  margin-top: 24px;
 }
