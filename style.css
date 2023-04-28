@@ -218,3 +218,7 @@ main{
 .about-me-container .article {
   margin-top: 24px;
 }
+.my-skills-container{
+  display: grid;
+  grid-template-rows: repeat(3,316px);
+}
