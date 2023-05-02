@@ -24,6 +24,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+
   /* justify-content: flex-end; */
   margin-top: 44px;
   width: 100%;
@@ -276,61 +277,72 @@ h3 {
   margin-right: 8px;
   margin-bottom: 8px;
 }
-@media only screen and (min-width:768px ) {
-  .container{
+
+@media only screen and (min-width: 768px) {
+  .container {
     height: 1140px;
     background-image: url(images/Header-llustration-desktop.svg);
     background-size: 105%;
     background-repeat: no-repeat;
     background-position: 0.2vw 0%;
   }
-  main{
+
+  main {
     height: 370px;
   }
-  .greeting .heading{
+
+  .greeting .heading {
     font-size: 48px;
   }
+
   .headline .article {
     width: 65vw;
     margin: 20px auto;
-    
   }
-  .headline .article p{
+
+  .headline .article p {
     text-align: center;
     text-align-last: center;
-    margin: 0px;
+    margin: 0;
   }
+
   .downarrow-container {
     margin-top: 65px;
   }
-  .work-container .work-title img{
+
+  .work-container .work-title img {
     display: none;
   }
-  .work-container{
+
+  .work-container {
     margin: 0 9.9vw;
   }
-  .my-projects{
+
+  .my-projects {
     margin-top: 52px;
     display: grid;
-    grid-template-columns: repeat(3,33%);
+    grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(2, 474px);
     gap: 32px 24px;
   }
-  .about-me-container{
+
+  .about-me-container {
     height: 300px;
     margin-top: 150px;
-    background-image: url(images/illustration-about\ me-1-desktop.svg),url(images/illustration-about-me-2-desktop.svg);
+    background-image: url(images/illustration-about\ me-1-desktop.svg), url(images/illustration-about-me-2-desktop.svg);
     background-size: 15%, 16%;
     background-position: 100.5% -20%, 0% 65%;
   }
-  .about-me-container .article{
+
+  .about-me-container .article {
     width: 65vw;
     margin: 0 auto;
   }
-  .skills-container-grid{
+
+  .skills-container-grid {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(3,33%);
+    grid-template-columns: repeat(3, 33%);
     column-gap: 24px;
     width: 80vw;
     margin: 60.95px auto 97px auto;
