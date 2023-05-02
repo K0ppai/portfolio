@@ -50,7 +50,7 @@ main {
 .headline {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  /* align-content: center; */
   max-width: 168.1013333333333%;
   height: 520px;
   background-image: url(images/header-illsutration-mobile.svg);
@@ -95,20 +95,22 @@ h3,h4 {
   color: #172b4d;
   margin: 15px 27px;
 }
-
-.social-media-icon-container {
+.social-media-icon-container{
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+}
+.social-media-icon-box {
   display: flex;
   position: absolute;
   justify-content: center;
   align-items: center;
   width: 45.379%;
   height: 19.62px;
-  left: 28%;
-  top: 568.89px;
   margin-top: 24.85px;
 }
 
-.social-media-icon-container li {
+.social-media-icon-box li {
   list-style: none;
 }
 
@@ -302,7 +304,7 @@ h3,h4 {
   box-sizing: border-box;
   border: 1px solid #D0D9D4;
   border-radius: 4px;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   padding: 15px 16px;
 }
 #name::placeholder,#email::placeholder{
@@ -318,7 +320,7 @@ h3,h4 {
   box-sizing: border-box;
   border: 1px solid #60C095;
   border-radius: 4px;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   padding: 12px;
 }
 .contact-me-container .type-in textarea::placeholder{
@@ -328,4 +330,28 @@ h3,h4 {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+}
+.contact-me-container .type-in button{
+  width: 130px;
+  height: 48px;
+  background: #36B37F;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+}
+.contact-me-container .type-in p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526E;
+  margin-bottom: 15px;
 }
