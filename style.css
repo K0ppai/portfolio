@@ -24,10 +24,9 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  /* justify-content: flex-end; */
   margin-top: 44px;
   width: 100%;
+  max-width: 100%;
   height: 48px;
 }
 
@@ -278,19 +277,24 @@ h3 {
   margin-bottom: 8px;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  /* *{
+    outline: 1px solid #f00 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  } */
+  
   .container {
     height: 1140px;
     background-image: url(images/Header-llustration-desktop.svg);
-    background-size: 105%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0.2vw 0%;
   }
 
-  main {
-    height: 370px;
+  .greeting{
+    margin-top: 150px;
   }
-
   .greeting .heading {
     font-size: 48px;
   }
@@ -302,12 +306,12 @@ h3 {
 
   .headline .article p {
     text-align: center;
-    text-align-last: center;
+    line-height: 32px;  
     margin: 0;
   }
 
   .downarrow-container {
-    margin-top: 65px;
+    margin-top: 20px;
   }
 
   .work-container .work-title img {
@@ -327,6 +331,7 @@ h3 {
   }
 
   .about-me-container {
+    max-width: 100%;
     height: 300px;
     margin-top: 150px;
     background-image: url(images/illustration-about\ me-1-desktop.svg), url(images/illustration-about-me-2-desktop.svg);
