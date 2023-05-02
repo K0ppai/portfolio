@@ -327,4 +327,12 @@ h3 {
     width: 65vw;
     margin: 0 auto;
   }
+  .skills-container-grid{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,33%);
+    column-gap: 24px;
+    width: 80vw;
+    margin: 60.95px auto 97px auto;
+  }
 }
