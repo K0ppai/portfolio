@@ -303,4 +303,17 @@ h3 {
   .downarrow-container {
     margin-top: 65px;
   }
+  .work-container .work-title img{
+    display: none;
+  }
+  .work-container{
+    margin: 0 142px;
+  }
+  .my-projects{
+    margin-top: 52px;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(2, 474px);
+    gap: 32px 24px;
+  }
 }
