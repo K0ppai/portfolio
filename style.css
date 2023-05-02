@@ -49,8 +49,7 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-
-  /* align-content: center; */
+  align-content: center;
   max-width: 168.1013333333333%;
   height: 520px;
 }
@@ -98,16 +97,13 @@ h4 {
 .social-media-icon-container {
   width: 100%;
   height: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 10px;
 }
 
 .social-media-icon-box {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 45.379%;
   height: 19.62px;
   margin-top: 24.85px;
