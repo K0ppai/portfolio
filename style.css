@@ -50,6 +50,7 @@ main {
 .headline {
   display: flex;
   flex-direction: column;
+
   /* align-content: center; */
   max-width: 168.1013333333333%;
   height: 520px;
@@ -71,7 +72,8 @@ main {
 .heading,
 h1,
 h2,
-h3,h4 {
+h3,
+h4 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -95,11 +97,16 @@ h3,h4 {
   color: #172b4d;
   margin: 15px 27px;
 }
-.social-media-icon-container{
+
+.social-media-icon-container {
+  width: 100%;
+  height: 48px;
   display: flex;
   flex-direction: column;
-  align-items:center ;
+  align-items: center;
+  margin-bottom: 10px;
 }
+
 .social-media-icon-box {
   display: flex;
   position: absolute;
@@ -283,75 +290,95 @@ h3,h4 {
   margin-right: 8px;
   margin-bottom: 8px;
 }
-.contact-me-container{
+
+.contact-bg {
+  width: 100%;
+  height: auto;
+  background-image: url(images/illustration-contact-form.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 100% 95%;
+}
+
+.contact-me-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 50px 24px 0 24px;
 }
-.cm-heading{
+
+.cm-heading {
   margin-bottom: 58px;
 }
-.contact-me-container .type-in{
+
+.contact-me-container .type-in {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.contact-me-container .type-in #name,#email{
+
+.contact-me-container .type-in #name,
+#email {
   width: 100%;
   height: 48px;
   box-sizing: border-box;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
   margin-bottom: 26px;
   padding: 15px 16px;
 }
-#name::placeholder,#email::placeholder{
-  font-family: 'Inter';
+
+#name::placeholder,
+#email::placeholder {
+  font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #6B778C;
+  color: #6b778c;
 }
-.contact-me-container .type-in textarea{ 
+
+.contact-me-container .type-in textarea {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   border-radius: 4px;
   margin-bottom: 26px;
   padding: 12px;
 }
-.contact-me-container .type-in textarea::placeholder{
-  color: #42526E;
-  font-family: 'Inter';
+
+.contact-me-container .type-in textarea::placeholder {
+  color: #42526e;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
 }
-.contact-me-container .type-in button{
+
+.contact-bg .contact-me-container .type-in button {
   width: 130px;
   height: 48px;
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 4px;
   border: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #fff;
   margin-bottom: 35px;
 }
-.contact-me-container .type-in p{
-  font-family: 'Inter';
+
+.contact-me-container .type-in p {
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #42526E;
+  color: #42526e;
   margin-bottom: 15px;
 }
