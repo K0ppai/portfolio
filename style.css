@@ -291,7 +291,7 @@ h3 {
     font-size: 48px;
   }
   .headline .article {
-    width: 50vw;
+    width: 65vw;
     margin: 20px auto;
     
   }
@@ -307,7 +307,7 @@ h3 {
     display: none;
   }
   .work-container{
-    margin: 0 142px;
+    margin: 0 9.9vw;
   }
   .my-projects{
     margin-top: 52px;
@@ -315,5 +315,16 @@ h3 {
     grid-template-columns: repeat(3,33%);
     grid-template-rows: repeat(2, 474px);
     gap: 32px 24px;
+  }
+  .about-me-container{
+    height: 300px;
+    margin-top: 150px;
+    background-image: url(images/illustration-about\ me-1-desktop.svg),url(images/illustration-about-me-2-desktop.svg);
+    background-size: 15%, 16%;
+    background-position: 100.5% -20%, 0% 65%;
+  }
+  .about-me-container .article{
+    width: 65vw;
+    margin: 0 auto;
   }
 }
