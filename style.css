@@ -415,6 +415,7 @@ h4 {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0.2vw 0%;
+    width: 100%;
   }
 
   .toolbar-icon {
