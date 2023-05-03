@@ -93,7 +93,9 @@ h4 {
   color: #172b4d;
   margin: 15px 27px;
 }
-
+#social-desktop{
+  display: none;
+}
 .social-media-icon-container {
   width: 100%;
   height: 48px;
@@ -103,6 +105,7 @@ h4 {
 .social-media-icon-box {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 45.379%;
   height: 19.62px;
   margin-top: 24.85px;
@@ -315,6 +318,7 @@ h4 {
 .black-bar {
   display: flex;
   justify-content: center;
+  margin-bottom: 5px;
 }
 
 .contact-me-container {
@@ -390,6 +394,12 @@ h4 {
 }
 
 @media screen and (min-width: 768px) {
+  #social-desktop{
+    display: block;
+  }
+  #social-mobile{
+    display: none;
+  }
   .container {
     height: 1140px;
     background-image: url(images/Header-llustration-desktop.svg);
