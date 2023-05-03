@@ -1,5 +1,8 @@
 <a name="readme-top"></a>
 
+Due to the lack of a coding partner, I've worked on this project alone.
+
+![image](https://user-images.githubusercontent.com/113283174/235998550-9ecf1883-01e4-4d1b-b3a9-18c5736e9701.png)
 
 # 📗 Table of Contents
 
