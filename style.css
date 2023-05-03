@@ -21,9 +21,6 @@ body {
 }
 
 .toolbar-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   margin-top: 44px;
   width: 100%;
   max-width: 100%;
@@ -32,18 +29,22 @@ body {
 
 .toolbar-icon {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 10.67%;
+  justify-content: flex-end;
   height: 40px;
-  right: 24px;
   border-radius: 8px;
+  width: 90%;
+  margin: 0 auto;
 }
-
+.toolbar-container .toolbar-icon li{
+  list-style: none;
+}
+.toolbar-container .toolbar-icon a{
+  display: none;
+}
 .toolbar-container .toolbar-icon img {
   width: 40px;
   height: auto;
+  align-self: flex-start;
 }
 
 .headline {
@@ -384,12 +385,6 @@ h4 {
 }
 
 @media screen and (min-width: 768px) {
-  /* *{
-    outline: 1px solid #f00 !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  } */
-
   .container {
     height: 1140px;
     background-image: url(images/Header-llustration-desktop.svg);
@@ -397,17 +392,33 @@ h4 {
     background-repeat: no-repeat;
     background-position: 0.2vw 0%;
   }
-
+  .toolbar-icon{
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+  .toolbar-container .toolbar-icon a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    color: #505F79;
+    margin-left: 40px;
+  }
+  .toolbar-container .toolbar-icon img{
+    display: none;
+  }
   .greeting {
     margin-top: 150px;
   }
 
   .greeting .heading {
     font-size: 48px;
+    line-height: 60px;
   }
 
   .headline .article {
-    width: 65vw;
+    width: 50vw;
     margin: 20px auto;
   }
 
