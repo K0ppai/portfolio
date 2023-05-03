@@ -96,7 +96,7 @@ h4 {
 .social-media-icon-container {
   width: 100%;
   height: 48px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .social-media-icon-box {
@@ -306,7 +306,10 @@ h4 {
   background-repeat: no-repeat;
   background-position: 100% 95%;
 }
-
+.black-bar{
+  display: flex;
+  justify-content: center;
+}
 .contact-me-container {
   display: flex;
   flex-direction: column;
@@ -324,7 +327,9 @@ h4 {
   align-items: center;
   width: 100%;
 }
-
+.form-container{
+  width: 100%;
+}
 .contact-me-container .type-in #name,
 #email {
   width: 100%;
@@ -409,7 +414,7 @@ h4 {
   }
 
   .downarrow-container {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .work-container .work-title img {
@@ -448,6 +453,45 @@ h4 {
     grid-template-columns: repeat(3, 33%);
     column-gap: 24px;
     width: 80vw;
-    margin: 60.95px auto 97px auto;
+    margin: 60.95px auto 0px auto;
+  }
+  .contact-bg{
+    background-image: url(images/illustration-1-contact-form-desktop.svg),url(images/illustration-2-contact-form-desktop.svg),url(images/contact\ form-illustratoin-3-desktop.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0% 90%,25% 82%,100% 75%;
+  }
+  .contact-me-container{
+    margin: 0 auto;
+    height: 665px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+  }
+  .black-bar{
+    display: none;
+  }
+  .cm-heading h4{
+    font-size: 30px;
+    word-spacing: normal;
+    text-align: left;
+    word-wrap: normal;
+  }
+  .type-in p{
+    display: none;
+  }
+  .form-container{
+    margin-left: 50px;
+    width: 95%;
+  }
+  .contact-me-container .type-in{
+    align-items: flex-start;
+  }
+  .contact-bg .social-media-icon-container{
+    border-top: #DFE1E6 solid 1px;
+  }
+  .contact-bg .social-media-icon-box{
+    margin-top: 25px;
   }
 }
