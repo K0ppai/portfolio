@@ -3,9 +3,16 @@
   padding: 0;
 }
 
+html {
+  max-width: 100vw;
+  width: 98.8vw;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   width: 100%;
-  height: auto;
+  max-width: 100%;
 }
 
 .container {
@@ -22,22 +29,45 @@ body {
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
 }
+
 @keyframes zoom-out {
-  from{
-    transform: scale3d(0.3,0.3,0.3);
+  from {
+    transform: scale3d(0.3, 0.3, 0.3);
   }
-  80%{
-    transform: scale3d(1.3,1.3,1.3);
+
+  80% {
+    transform: scale3d(1.3, 1.3, 1.3);
   }
-  to{
-    transform: scale3d(1,1,1);
+
+  to {
+    transform: scale3d(1, 1, 1);
   }
 }
-#animation-left{
+
+#animation-left {
   animation-name: slide-in-left;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
+
+#animation-right {
+  animation-name: slide-in-right;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-in-right {
+  from {
+    margin-right: 300%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
 @keyframes slide-in-left {
   from {
     margin-left: 100%;
@@ -49,6 +79,7 @@ body {
     width: 100%;
   }
 }
+
 .toolbar-container {
   margin-top: 44px;
   width: 100%;
@@ -158,6 +189,7 @@ h4 {
 .social-media-icon:active {
   transform: scale3d(0.8, 0.8, 0.8);
 }
+
 .social-media-icon:hover {
   transform: scale3d(1.3, 1.3, 1.3);
 }
@@ -167,8 +199,8 @@ h4 {
 }
 
 .work-container {
-  margin-left: 6.93%;
-  margin-right: 7.46667%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .work-title {
@@ -183,11 +215,13 @@ h4 {
 }
 
 .my-projects {
+  width: 100%;
   margin-top: 16.53%;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
   grid-template-rows: repeat(6, 480px);
   row-gap: 24px;
+  overflow: hidden;
 }
 
 .work-cards {
@@ -434,6 +468,9 @@ h4 {
 }
 
 @media screen and (min-width: 768px) {
+  /* *{
+    outline: red 1px solid !important;
+  } */
   #social-desktop {
     display: block;
   }
@@ -450,8 +487,8 @@ h4 {
     background-position: 0.2vw 0%;
     width: 100%;
   }
-  
-  
+
+
 
   .toolbar-icon {
     justify-content: center;
@@ -468,9 +505,11 @@ h4 {
     margin-left: 40px;
     transition: all 0.2s ease-in-out;
   }
+
   .toolbar-container .toolbar-icon a:hover {
     transform: scale3d(1.2, 1.2, 1.2);
   }
+
   .toolbar-container .toolbar-icon img {
     display: none;
   }
@@ -504,13 +543,16 @@ h4 {
   }
 
   .work-container {
-    margin: 0 9.9vw;
+    max-width: 90%;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .my-projects {
-    margin-top: 52px;
+    width: 100%;
+    margin: 52px 1px 0 1px;
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 32%);
     grid-template-rows: repeat(2, 474px);
     gap: 32px 24px;
   }
