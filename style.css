@@ -50,10 +50,39 @@ body {
   animation-timing-function: ease-in-out;
 }
 
+#animation-left:hover {
+  translate: 8px 8px;
+}
+
 #animation-right {
   animation-name: slide-in-right;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
+}
+
+.work-container .work-title img {
+  width: 12.8%;
+  padding-top: 6.4%;
+}
+
+.toolbar-container .toolbar-icon img {
+  width: 40px;
+  height: auto;
+  align-self: flex-start;
+}
+
+.skills-container-each .skill-icon img:hover {
+  animation: rotation 0.5s 1 linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 @keyframes slide-in-right {
@@ -102,12 +131,6 @@ body {
 
 .toolbar-container .toolbar-icon a {
   display: none;
-}
-
-.toolbar-container .toolbar-icon img {
-  width: 40px;
-  height: auto;
-  align-self: flex-start;
 }
 
 .headline {
@@ -209,11 +232,6 @@ h4 {
   align-items: center;
 }
 
-.work-container .work-title img {
-  width: 12.8%;
-  padding-top: 6.4%;
-}
-
 .my-projects {
   width: 100%;
   margin-top: 16.53%;
@@ -221,7 +239,7 @@ h4 {
   grid-template-columns: 100%;
   grid-template-rows: repeat(6, 480px);
   row-gap: 24px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .work-cards {
@@ -488,8 +506,6 @@ h4 {
     width: 100%;
   }
 
-
-
   .toolbar-icon {
     justify-content: center;
     align-items: center;
@@ -543,18 +559,18 @@ h4 {
   }
 
   .work-container {
-    max-width: 90%;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .my-projects {
     width: 100%;
-    margin: 52px 1px 0 1px;
+    margin-top: 52px;
+    padding-bottom: 52px;
     display: grid;
-    grid-template-columns: repeat(3, 32%);
+    grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(2, 474px);
     gap: 32px 24px;
+    justify-content: center;
   }
 
   .about-me-container {
