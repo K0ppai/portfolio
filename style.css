@@ -212,9 +212,14 @@ h4 {
   font-size: 17px;
   text-align: center;
 }
-
 #button:hover {
-  background-color: #238d61;
+  background-color: #2aaf78;
+  box-shadow: 0 3px 5px #18724d;
+}
+#button:active {
+  background-color: #1f9865;
+  box-shadow: 0 3px 5px #18724d;
+  transform: translateY(4px);
 }
 
 .contact-bg .contact-me-container .type-in button {
