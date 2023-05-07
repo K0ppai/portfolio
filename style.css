@@ -326,6 +326,7 @@ h4 {
 
 .skills-container-grid {
   max-width: 100%;
+  width: 100%;
   display: grid;
   grid-template-rows: repeat(3, 316px);
   grid-template-columns: 100%;
@@ -334,6 +335,8 @@ h4 {
 }
 
 .skills-container-each {
+  width: 90%;
+  margin: 0 auto;
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #c1c7d0;
