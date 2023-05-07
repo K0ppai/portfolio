@@ -44,6 +44,7 @@ Due to the lack of a coding partner, I've worked on this project alone.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+- https://k0ppai.github.io/
 
 
 
