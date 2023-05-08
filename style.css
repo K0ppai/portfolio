@@ -618,6 +618,15 @@ h4 {
     margin: 60.95px auto 0 auto;
   }
 
+  .skills-container-each {
+    width: 99%;
+  }
+
+  .skills-container-each .skills {
+    width: 99%;
+    margin: 24px auto;
+  }
+
   .contact-bg {
     background-image: url(images/illustration-1-contact-form-desktop.svg), url(images/illustration-2-contact-form-desktop.svg), url(images/contact\ form-illustratoin-3-desktop.svg);
     background-size: auto;
