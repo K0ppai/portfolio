@@ -12,7 +12,10 @@ body {
   width: 100%;
   font-family: 'Inter', sans-serif;
 }
-
+header{
+  width: 100%;
+  height: ;
+}
 .container {
   width: 100%;
   height: 820px;
@@ -41,13 +44,28 @@ body {
   width: 12.8%;
   padding-top: 6.4%;
 }
-
-.toolbar-container .toolbar-icon img {
-  width: 40px;
-  height: auto;
-  align-self: flex-start;
+.hamburger{
+  margin-left: auto;
+  margin-right: 25px;
+}
+.hamburger .bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: black;
+}
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
 }
 
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
 .skills-container-each .skill-icon img:hover {
   animation: rotation 0.5s 1 linear;
 }
@@ -90,16 +108,19 @@ body {
   margin-top: 20px;
   width: 100%;
   max-width: 100%;
-  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .toolbar-icon {
-  display: flex;
-  justify-content: flex-end;
-  height: 40px;
-  border-radius: 8px;
-  width: 90%;
-  margin: 0 auto;
+  position: fixed;
+  left: -100%;
+  top: 60px;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  text-align: left;
 }
 
 .toolbar-container .toolbar-icon li {
