@@ -43,9 +43,13 @@ header{
   width: 12.8%;
   padding-top: 6.4%;
 }
+.navlink{
+  transition: 0.7s ease;
+}
 .hamburger{
   margin-left: auto;
   margin-right: 25px;
+  cursor: pointer;
 }
 .hamburger .bar{
   display: block;
@@ -114,14 +118,19 @@ header{
 
 .toolbar-icon {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   left: -100%;
   top: 60px;
   flex-direction: column;
   background-color: #fff;
   width: 100%;
   text-align: left;
+  transition: 0.3s;
 }
-
+.toolbar-icon.active {
+  left: 0;
+}
 .toolbar-container .toolbar-icon li {
   list-style: none;
 }
@@ -535,10 +544,16 @@ h4 {
 
   .toolbar-icon {
     justify-content: center;
+    flex-direction: row;
+    left: 0%;
     align-items: center;
     width: 20%;
+    background-color: black;
   }
-
+  .hamburger{
+    margin-left: 0;
+    display: none;
+  }
   .toolbar-container .toolbar-icon a {
     display: block;
     text-decoration: none;
