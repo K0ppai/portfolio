@@ -13,9 +13,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-header{
+header {
   width: 100%;
 }
+
 .container {
   width: 100%;
   height: 820px;
@@ -44,10 +45,12 @@ header{
   width: 12.8%;
   padding-top: 6.4%;
 }
-.navlink{
+
+.navlink {
   transition: 0.7s ease;
 }
-.hamburger{
+
+.hamburger {
   cursor: pointer;
   background-color: rgb(255, 255, 255);
   position: fixed;
@@ -58,7 +61,8 @@ header{
   padding: 8px;
   border-radius: 5px;
 }
-.hamburger .bar{
+
+.hamburger .bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -66,17 +70,19 @@ header{
   background-color: black;
   border-radius: 3px;
 }
-.hamburger.active .bar:nth-child(2){
+
+.hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(1){
+.hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-.hamburger.active .bar:nth-child(3){
+.hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+
 .skills-container-each .skill-icon img:hover {
   animation: rotation 0.5s 1 linear;
 }
@@ -131,7 +137,6 @@ header{
   left: -100%;
   height: 100vh;
   top: 0;
-  flex-direction: column;
   background-color: #fff;
   width: 100%;
   text-align: left;
@@ -139,11 +144,13 @@ header{
   padding-top: 80px;
   padding-left: 30px;
 }
+
 .toolbar-icon.active {
   left: 0;
-  color: #3A4A42;
+  color: #3a4a42;
   font-size: 32px;
 }
+
 .toolbar-container .toolbar-icon li {
   list-style: none;
 }
@@ -153,7 +160,7 @@ header{
   font-size: 32px;
   font-weight: 600;
   line-height: 60px;
-  color: #3A4A42;
+  color: #3a4a42;
 }
 
 .headline {
@@ -558,7 +565,7 @@ h4 {
 
   .toolbar-container {
     padding-top: 0;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .toolbar-icon {
@@ -569,24 +576,29 @@ h4 {
     flex-direction: row;
     left: 0%;
     background-color: unset;
-    padding-top: 0px;
-    padding-left: 0px;
+    padding-top: 0;
+    padding-left: 0;
   }
-  .hamburger{
+
+  .hamburger {
     margin-left: 0;
     display: none;
   }
-  .toolbar-container .toolbar-icon li{
+
+  .toolbar-container .toolbar-icon li {
     display: flex;
     align-items: center;
     height: auto;
   }
-  .toolbar-container .toolbar-icon li:nth-child(2){
+
+  .toolbar-container .toolbar-icon li:nth-child(2) {
     margin-left: 40px;
   }
-  .toolbar-container .toolbar-icon li:nth-child(3){
+
+  .toolbar-container .toolbar-icon li:nth-child(3) {
     margin-left: 40px;
   }
+
   .toolbar-container .toolbar-icon a {
     display: block;
     text-decoration: none;
@@ -600,7 +612,6 @@ h4 {
   .toolbar-container .toolbar-icon a:hover {
     transform: scale3d(1.2, 1.2, 1.2);
   }
-
 
   .greeting {
     margin-top: 90px;
