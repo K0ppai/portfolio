@@ -11,17 +11,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header class="toolbar-container">
-      <nav>
+  <header class="container">
+      <nav class="toolbar-container">
         <ul class="toolbar-icon">
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about-me">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><img src="images/vector.svg"></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#about-me" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
-    </header>
     
     <main>
       <section>
@@ -78,7 +80,7 @@
     <div class="downarrow-container">
       <img src="images/arrowdown.svg">
     </div>
-  </div>
+  </>
   <section id="portfolio" class="work-container">
     <div class="work-title">
       <h2 class="heading">My Recent Works</h2>
@@ -308,5 +310,6 @@
       <img src="images/Shape.svg" alt="black-bar">
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

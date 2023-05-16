@@ -13,6 +13,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+header {
+  width: 100%;
+}
+
 .container {
   width: 100%;
   height: 820px;
@@ -42,10 +46,41 @@ body {
   padding-top: 6.4%;
 }
 
-.toolbar-container .toolbar-icon img {
-  width: 40px;
-  height: auto;
-  align-self: flex-start;
+.navlink {
+  transition: 0.7s ease;
+}
+
+.hamburger {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  right: 30px;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .skills-container-each .skill-icon img:hover {
@@ -87,19 +122,33 @@ body {
 }
 
 .toolbar-container {
-  margin-top: 20px;
+  padding-top: 20px;
   width: 100%;
   max-width: 100%;
-  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .toolbar-icon {
+  position: fixed;
   display: flex;
-  justify-content: flex-end;
-  height: 40px;
-  border-radius: 8px;
-  width: 90%;
-  margin: 0 auto;
+  flex-direction: column;
+  left: -100%;
+  height: 100vh;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: left;
+  transition: 0.3s;
+  padding-top: 80px;
+  padding-left: 30px;
+}
+
+.toolbar-icon.active {
+  left: 0;
+  color: #3a4a42;
+  font-size: 32px;
 }
 
 .toolbar-container .toolbar-icon li {
@@ -107,7 +156,11 @@ body {
 }
 
 .toolbar-container .toolbar-icon a {
-  display: none;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #3a4a42;
 }
 
 .headline {
@@ -115,6 +168,7 @@ body {
   flex-direction: column;
   max-width: 168.1013333333333%;
   height: 520px;
+  margin-top: 90px;
 }
 
 .greeting {
@@ -510,34 +564,57 @@ h4 {
   }
 
   .toolbar-container {
-    margin-top: 10px;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .toolbar-icon {
+    position: relative;
+    height: auto;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    flex-direction: row;
+    left: 0%;
+    background-color: unset;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .hamburger {
+    margin-left: 0;
+    display: none;
+  }
+
+  .toolbar-container .toolbar-icon li {
+    display: flex;
+    align-items: center;
+    height: auto;
+  }
+
+  .toolbar-container .toolbar-icon li:nth-child(2) {
+    margin-left: 40px;
+  }
+
+  .toolbar-container .toolbar-icon li:nth-child(3) {
+    margin-left: 40px;
   }
 
   .toolbar-container .toolbar-icon a {
     display: block;
     text-decoration: none;
+    font-size: 12px;
     font-weight: 700;
     color: #505f79;
-    margin-left: 40px;
     transition: all 0.2s ease-in-out;
+    text-align: left;
   }
 
   .toolbar-container .toolbar-icon a:hover {
     transform: scale3d(1.2, 1.2, 1.2);
   }
 
-  .toolbar-container .toolbar-icon img {
-    display: none;
-  }
-
   .greeting {
-    margin-top: 100px;
+    margin-top: 90px;
   }
 
   .greeting .heading {
@@ -546,6 +623,7 @@ h4 {
   }
 
   .headline {
+    margin-top: 0;
     height: 450px;
   }
 
@@ -570,6 +648,7 @@ h4 {
 
   .work-container {
     width: 100%;
+    margin-top: 480px;
   }
 
   .my-projects {
