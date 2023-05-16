@@ -331,12 +331,12 @@ h4 {
   text-align: center;
 }
 
-#button:hover {
+.button:hover {
   background-color: #2aaf78;
   box-shadow: 0 3px 5px #18724d;
 }
 
-#button:active {
+.button:active {
   background-color: #1f9865;
   box-shadow: 0 3px 5px #18724d;
   transform: translateY(4px);
@@ -664,7 +664,7 @@ h4 {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%,-50%);
     border-radius: 10px;
     z-index: 10;
     background-color: rgb(255, 255, 255);
@@ -706,19 +706,21 @@ h4 {
   }
   .see-live-container{
     display: flex;
-    width: 12%;
+    width: 13%;
     margin-left: 40px;
     align-items: center;
     background-color: #36B37E;
-    padding: 8px 7px;
+    padding: 6px 7px;
     border-radius: 8px;
   }
-  .see-live-container p,.see-source-container p{
-    padding-right: 7px;
+  .see-live-container a,.see-source-container a{
+    text-decoration: none;
+    padding-right: 5px;
     font-size: 10px;
     color: #FFFFFF;
   }
   .see-live-container img{
+    padding-top: 4px;
     width: 15px;
   }
   .see-source-container img{
@@ -767,6 +769,7 @@ h4 {
     opacity: 1;
     pointer-events: all;
   }
+
   .about-me-container {
     width: 100%;
     height: 300px;
