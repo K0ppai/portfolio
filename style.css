@@ -524,7 +524,6 @@ h4 {
   body {
     width: 100%;
   }
-
   #social-desktop {
     display: block;
   }
@@ -648,7 +647,7 @@ h4 {
 
   .work-container {
     width: 100%;
-    margin-top: 480px;
+    margin-top: 0px;
   }
 
   .my-projects {
@@ -665,7 +664,7 @@ h4 {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) scale(0);
     border-radius: 10px;
     z-index: 10;
     background-color: rgb(255, 255, 255);
@@ -673,6 +672,7 @@ h4 {
     max-width: 90%;
     padding: 12px;
     height: 92vh;
+    transition: 200ms ease-in-out;
   }
   .close-container{
     display: flex;
@@ -761,6 +761,7 @@ h4 {
     bottom: 0;
     background-color: #C1C7D0;
     pointer-events: none;
+    transition: 200ms ease-in-out;
   }
   .overlay.active{
     opacity: 1;
