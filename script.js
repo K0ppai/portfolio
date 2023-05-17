@@ -11,52 +11,98 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-const open1 = document.getElementById('seeproject1');
-const open2 = document.getElementById('seeproject2');
-const open3 = document.getElementById('seeproject3');
-const open4 = document.getElementById('seeproject4');
-const open5 = document.getElementById('seeproject5');
-const open6 = document.getElementById('seeproject6');
+
+const projectBtns = document.querySelectorAll('.seeproject');
 const body = document.querySelector('body');
 
 const data = [{
+  projectNum: '1',
   name: 'Keeping track of hundreds of components',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
   featuredImage: 'images/Snapshoot Portfolio.svg',
-  // technologies :
+  technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   linkLiveVersion: 'https://k0ppai.github.io/',
   linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
 },
-
+{
+  projectNum: '2',
+  name: 'Project2',
+  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
+  featuredImage: 'images/Snapshoot Portfolio.svg',
+  technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+  linkLiveVersion: 'https://k0ppai.github.io/',
+  linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
+},
+{
+  projectNum: '3',
+  name: 'project3',
+  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
+  featuredImage: 'images/Snapshoot Portfolio.svg',
+  technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+  linkLiveVersion: 'https://k0ppai.github.io/',
+  linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
+},
+{
+  projectNum: '4',
+  name: 'project4',
+  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
+  featuredImage: 'images/Snapshoot Portfolio.svg',
+  technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+  linkLiveVersion: 'https://k0ppai.github.io/',
+  linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
+},
+{
+  projectNum: '5',
+  name: 'project5',
+  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
+  featuredImage: 'images/Snapshoot Portfolio.svg',
+  technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+  linkLiveVersion: 'https://k0ppai.github.io/',
+  linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
+},
+{
+  projectNum: '6',
+  name: 'project6',
+  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
+  featuredImage: 'images/Snapshoot Portfolio.svg',
+  technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+  linkLiveVersion: 'https://k0ppai.github.io/',
+  linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
+},
 ];
-open1.addEventListener('click', () => {
+const popUp = (n) => {
   const html = document.createElement('div');
+  const seeProjectNum = n.target.dataset.number;
+  console.log(seeProjectNum);
+  console.log('click');
+  const [dataForEach] = data.filter((element) => element.projectNum === seeProjectNum);
+  console.log(dataForEach);
   html.innerHTML = `
   <div class="see-project-container active">
         <div class="close-container">
           <button type="button" class="close-button">&times;</button>
         </div>
-        <img src="${data[0].featuredImage}" id="project-img">
+        <img src="${dataForEach.featuredImage}" id="project-img">
         <div class="project-title-container">
-          <h2>${data[0].name}</h2>
+          <h2>${dataForEach.name}</h2>
           <div class="see-live-container">
-            <a href="${data[0].linkLiveVersion}">See live</a>
-            <a href="${data[0].linkLiveVersion}"><img src="images/See-live.svg"></a>
+            <a href="${dataForEach.linkLiveVersion}">See live</a>
+            <a href="${dataForEach.linkLiveVersion}"><img src="images/See-live.svg"></a>
           </div>
           <div class="see-source-container">
-            <a href="${data[0].linkSource}">See source</a>
-            <a href="${data[0].linkSource}"><img src="images/github-white.svg"></a>
+            <a href="${dataForEach.linkSource}">See source</a>
+            <a href="${dataForEach.linkSource}"><img src="images/github-white.svg"></a>
           </div>
         </div>
         <ul class="project-tech">
-          <li>Codekit</li>
-          <li>GitHub</li>
-          <li>JavaScript</li>
-          <li>Bootstrap</li>
-          <li>Terminal</li>
-          <li>Codepen</li>
+          <li>${dataForEach.technologies[0]}</li>
+          <li>${dataForEach.technologies[1]}</li>
+          <li>${dataForEach.technologies[2]}</li>
+          <li>${dataForEach.technologies[3]}</li>
+          <li>${dataForEach.technologies[4]}</li>
+          <li>${dataForEach.technologies[5]}</li>
         </ul>
-        <p class="project-desc">${data[0].description}</p>
+        <p class="project-desc">${dataForEach.description}</p>
       </div>
       <div class="overlay active"></div>
   `;
@@ -65,5 +111,8 @@ open1.addEventListener('click', () => {
   closebtn.addEventListener('click', () => {
     body.removeChild(html);
   });
-});
+};
 
+projectBtns.forEach((button) => {
+  button.addEventListener('click', popUp);
+});
