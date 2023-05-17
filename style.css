@@ -854,6 +854,8 @@ h4 {
     transition: 200ms ease-in-out;
   }
 
+
+
   .close-container {
     position: unset;
     display: flex;
@@ -912,12 +914,12 @@ h4 {
     background-color: #36b37e;
   }
 
-  .project-title-container .see-live-container img {
+  .see-project-container .project-title-container .see-live-container img {
     padding-top: 4px;
     width: 15px;
   }
 
-  .project-title-container .see-source-container img {
+  .see-project-container .project-title-container .see-source-container img {
     width: 11px;
   }
 
