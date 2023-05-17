@@ -11,7 +11,6 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-
 const projectBtns = document.querySelectorAll('.seeproject');
 const body = document.querySelector('body');
 
@@ -73,10 +72,10 @@ const data = [{
 const popUp = (n) => {
   const html = document.createElement('div');
   const seeProjectNum = n.target.dataset.number;
-  console.log(seeProjectNum);
-  console.log('click');
+  // console.log(seeProjectNum);
+  // console.log('click');
   const [dataForEach] = data.filter((element) => element.projectNum === seeProjectNum);
-  console.log(dataForEach);
+  // console.log(dataForEach);
   html.innerHTML = `
   <div class="see-project-container active">
         <div class="close-container">
