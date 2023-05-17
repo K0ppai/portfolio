@@ -72,10 +72,14 @@ const data = [{
 const popUp = (n) => {
   const html = document.createElement('div');
   const seeProjectNum = n.target.dataset.number;
-  // console.log(seeProjectNum);
-  // console.log('click');
+  const mediaQuery = window.matchMedia('(max-width: 768px)');
   const [dataForEach] = data.filter((element) => element.projectNum === seeProjectNum);
-  // console.log(dataForEach);
+  if (mediaQuery.matches) {
+    dataForEach.featuredImage = 'images/popupmobile.svg';
+    dataForEach.technologies[0] = 'Ruby on Rails';
+    dataForEach.technologies[1] = 'CSS';
+    dataForEach.technologies[2] = 'JavaScript';
+  }
   html.innerHTML = `
   <div class="see-project-container active">
         <div class="close-container">
