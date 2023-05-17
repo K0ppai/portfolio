@@ -1033,21 +1033,26 @@ h4 {
     margin-top: 25px;
   }
 }
+
 @media screen and (min-width: 1024px) {
-  .see-project-container{
+  .see-project-container {
     padding: 15px;
   }
+
   .see-project-container #project-img {
     padding-top: 14px;
+
     /* width: unset;
     height: unset; */
     aspect-ratio: 1 / 1;
   }
-  .see-live-container{
+
+  .see-live-container {
     width: 10%;
     margin-left: 150px;
   }
-  .see-source-container{
+
+  .see-source-container {
     width: 12%;
   }
 }
