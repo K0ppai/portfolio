@@ -847,7 +847,7 @@ h4 {
     border-radius: 10px;
     z-index: 10;
     background-color: rgb(255, 255, 255);
-    width: 500px;
+    width: 75vw;
     max-width: 90%;
     padding: 12px;
     height: 92vh;
@@ -874,6 +874,9 @@ h4 {
   .see-project-container #project-img {
     padding-top: 14px;
     width: 100%;
+    height: 60%;
+    aspect-ratio: 10 / 2;
+    object-fit: cover;
   }
 
   .project-title-container {
@@ -1028,5 +1031,23 @@ h4 {
 
   .contact-bg .social-media-icon-box {
     margin-top: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .see-project-container{
+    padding: 15px;
+  }
+  .see-project-container #project-img {
+    padding-top: 14px;
+    /* width: unset;
+    height: unset; */
+    aspect-ratio: 1 / 1;
+  }
+  .see-live-container{
+    width: 10%;
+    margin-left: 150px;
+  }
+  .see-source-container{
+    width: 12%;
   }
 }
