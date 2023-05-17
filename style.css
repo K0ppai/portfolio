@@ -854,8 +854,6 @@ h4 {
     transition: 200ms ease-in-out;
   }
 
-
-
   .close-container {
     position: unset;
     display: flex;
