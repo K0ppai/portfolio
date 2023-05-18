@@ -12,7 +12,7 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 }));
 
 const body = document.querySelector('body');
-// const btn = document.querySelectorAll('.seeproject');
+const btn = document.querySelectorAll('.seeproject');
 const data = [{
   name: 'Keeping track of hundreds of components',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
@@ -154,4 +154,4 @@ for (let i = 0; i < 6; i += 1) {
         </div>
       </div>`;
 }
-// btn.addEventListener('click', popUp());
+btn.addEventListener('click', popUp());
