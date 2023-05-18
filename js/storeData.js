@@ -16,3 +16,12 @@ const storeData = () => {
 allInput.forEach((input) => {
   input.addEventListener('input', storeData);
 });
+
+const getData = localStorage.getItem('DataFromUser');
+const prefillData = JSON.parse(getData);
+
+if (prefillData !== null) {
+  fullname.value = prefillData.inputName;
+  email.value = prefillData.inputEmail;
+  message.value = prefillData.inputText;
+}
