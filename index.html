@@ -144,11 +144,11 @@
       </div>
       <div class="form-container">
         <form action="https://formspree.io/f/moqzrddp" method="post" class="type-in" id="form">
-          <input type="text" placeholder="Full Name" id="name" name="name" maxlength="30" required>
-          <input type="email" id="email" name="email" placeholder="Email address" required>
+          <input type="text" placeholder="Full Name" class="input" id="name" name="name" maxlength="30" required>
+          <input type="email" id="email" name="email" class="input" placeholder="Email address" required>
           <small class="validate-email"></small>
-          <textarea name="msg" id="msg" cols="11" rows="5" placeholder="Hey I’d like to connect to..." maxlength="500" required></textarea>
-          <button type="submit" class="button">Get in touch</button>
+          <textarea name="msg" id="msg" cols="11" rows="5" class="input" placeholder="Hey I’d like to connect to..." maxlength="500" required></textarea>
+          <button type="submit" id="get-in-touch" class="button">Get in touch</button>
           <p>psthu.koppai@gmail.com</p>
         </form>
       </div>
@@ -195,7 +195,8 @@
       <img src="images/Shape.svg" alt="black-bar">
     </div>
   </div>
-  <script src="script.js"></script>
-  <script src="formValidation.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/formValidation.js"></script>
+  <script src="js/storeData.js"></script>
 </body>
 </html>

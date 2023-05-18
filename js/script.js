@@ -16,7 +16,7 @@ const btn = document.querySelectorAll('.seeproject');
 const data = [{
   name: 'Keeping track of hundreds of components',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
-  featuredImage: 'images/Snapshoot Portfolio.svg',
+  img: 'images/Snapshoot Portfolio.svg',
   firstlineTitle: 'Multi-Post Stories',
   secondlineTitle: 'Gain+Glory',
   languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
@@ -27,7 +27,7 @@ const data = [{
 {
   name: 'Project2',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
-  featuredImage: 'images/Snapshoot Portfolio.svg',
+  img: 'images/Snapshoot Portfolio.svg',
   firstlineTitle: 'Multi-Post Stories',
   secondlineTitle: 'Gain+Glory',
   languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
@@ -38,7 +38,7 @@ const data = [{
 {
   name: 'project3',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
-  featuredImage: 'images/Snapshoot Portfolio.svg',
+  img: 'images/Snapshoot Portfolio.svg',
   technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   firstlineTitle: 'Multi-Post Stories',
   secondlineTitle: 'Gain+Glory',
@@ -52,7 +52,7 @@ const data = [{
   firstlineTitle: 'Multi-Post Stories',
   secondlineTitle: 'Gain+Glory',
   languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-  featuredImage: 'images/Snapshoot Portfolio.svg',
+  img: 'images/Snapshoot Portfolio.svg',
   technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   linkLiveVersion: 'https://k0ppai.github.io/',
   linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
@@ -60,7 +60,7 @@ const data = [{
 {
   name: 'project5',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
-  featuredImage: 'images/Snapshoot Portfolio.svg',
+  img: 'images/Snapshoot Portfolio.svg',
   technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   firstlineTitle: 'Multi-Post Stories',
   secondlineTitle: 'Gain+Glory',
@@ -71,7 +71,7 @@ const data = [{
 {
   name: 'project6',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
-  featuredImage: 'images/Snapshoot Portfolio.svg',
+  img: 'images/Snapshoot Portfolio.svg',
   firstlineTitle: 'Multi-Post Stories',
   secondlineTitle: 'Gain+Glory',
   languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
@@ -84,7 +84,7 @@ const popUp = (i) => {
   const html = document.createElement('div');
   const mediaQuery = window.matchMedia('(max-width: 768px)');
   if (mediaQuery.matches) {
-    data[i].featuredImage = 'images/popupmobile.svg';
+    data[i].img = 'images/popupmobile.svg';
     data[i].technologies[0] = 'Ruby on Rails';
     data[i].technologies[1] = 'CSS';
     data[i].technologies[2] = 'JavaScript';
@@ -94,7 +94,7 @@ const popUp = (i) => {
         <div class="close-container">
           <button type="button" class="close-button">&times;</button>
         </div>
-        <img src="${data[i].featuredImage}" id="project-img">
+        <img src="${data[i].img}" id="project-img">
         <div class="project-title-container">
           <h2>${data[i].name}</h2>
           <div class="see-live-container">
