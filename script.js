@@ -14,7 +14,6 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 const body = document.querySelector('body');
 const btn = document.querySelectorAll('.seeproject');
 const data = [{
-  projectNum: '0',
   name: 'Keeping track of hundreds of components',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
   featuredImage: 'images/Snapshoot Portfolio.svg',
@@ -26,7 +25,6 @@ const data = [{
   linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
 },
 {
-  projectNum: '1',
   name: 'Project2',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
   featuredImage: 'images/Snapshoot Portfolio.svg',
@@ -38,7 +36,6 @@ const data = [{
   linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
 },
 {
-  projectNum: '2',
   name: 'project3',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
   featuredImage: 'images/Snapshoot Portfolio.svg',
@@ -50,7 +47,6 @@ const data = [{
   linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
 },
 {
-  projectNum: '3',
   name: 'project4',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
   firstlineTitle: 'Multi-Post Stories',
@@ -62,7 +58,6 @@ const data = [{
   linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
 },
 {
-  projectNum: '4',
   name: 'project5',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
   featuredImage: 'images/Snapshoot Portfolio.svg',
@@ -74,7 +69,6 @@ const data = [{
   linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
 },
 {
-  projectNum: '5',
   name: 'project6',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
   featuredImage: 'images/Snapshoot Portfolio.svg',
@@ -138,7 +132,6 @@ function insertAfter(newNode, existingNode) {
 const div = document.createElement('div');
 const parentElement = document.getElementById('portfolio');
 div.className = 'my-projects';
-div.innerHTML = '';
 insertAfter(div, parentElement.lastElementChild);
 for (let i = 0; i < 6; i += 1) {
   div.innerHTML += `

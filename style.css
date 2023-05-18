@@ -664,6 +664,15 @@ h4 {
   margin-bottom: 15px;
 }
 
+.validate-email {
+  position: relative;
+  bottom: 20px;
+  font-size: 12px;
+  color: red;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
 @media screen and (min-width: 768px) {
   /* *{
     outline: red 1px solid !important;
