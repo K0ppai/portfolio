@@ -668,7 +668,7 @@ h4 {
   position: relative;
   bottom: 20px;
   font-size: 12px;
-  color: red;
+  color: rgb(255, 0, 0);
   padding-bottom: 5px;
   padding-left: 5px;
 }
