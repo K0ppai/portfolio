@@ -143,9 +143,10 @@
         <h4>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h4>
       </div>
       <div class="form-container">
-        <form action="https://formspree.io/f/moqzrddp" method="post" class="type-in">
+        <form action="https://formspree.io/f/moqzrddp" method="post" class="type-in" id="form">
           <input type="text" placeholder="Full Name" id="name" name="name" maxlength="30" required>
           <input type="email" id="email" name="email" placeholder="Email address" required>
+          <small class="validate-email"></small>
           <textarea name="msg" id="msg" cols="11" rows="5" placeholder="Hey I’d like to connect to..." maxlength="500" required></textarea>
           <button type="submit" class="button">Get in touch</button>
           <p>psthu.koppai@gmail.com</p>
@@ -195,5 +196,6 @@
     </div>
   </div>
   <script src="script.js"></script>
+  <script src="formValidation.js"></script>
 </body>
 </html>
