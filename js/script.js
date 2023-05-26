@@ -149,7 +149,7 @@ for (let i = 0; i < 6; i += 1) {
             </ul>
           </div>
           <div class="button-container">
-            <button type="button" onclick='popUp(${i})' class="button seeproject" id="seeproject${i}">See project</button>
+            <button type="button" onclick='popUp(${i + 2})' class="button seeproject" id="seeproject${i}">See project</button>
           </div>
         </div>
       </div>`;
