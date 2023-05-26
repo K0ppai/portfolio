@@ -133,7 +133,7 @@ const div = document.createElement('div');
 const parentElement = document.getElementById('portfolio');
 div.className = 'my-projects';
 insertAfter(div, parentElement.lastElementChild);
-for (let i = 0; i < 6; i += 1) {
+for (let i = 0; i < 3; i += 1) {
   div.innerHTML += `
   <div id="project${i}" class="work-cards animation-left">
         <div class="img-placeholder">
