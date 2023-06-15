@@ -17,9 +17,11 @@ const data = [{
   name: 'Keeping track of hundreds of components',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
   img: 'images/Snapshoot Portfolio.svg',
+  mobileImg: '',
+  displayImg: '',
   firstlineTitle: 'Multi-Post Stories',
   secondlineTitle: 'Gain+Glory',
-  languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+  languages: ['Bootstrap','CSS', 'JavaScript', 'HTML'],
   technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   linkLiveVersion: 'https://k0ppai.github.io/',
   linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
@@ -28,6 +30,8 @@ const data = [{
   name: 'Project2',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
   img: 'images/Snapshoot Portfolio.svg',
+  mobileImg: '',
+  displayImg: '',
   firstlineTitle: 'Multi-Post Stories',
   secondlineTitle: 'Gain+Glory',
   languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
@@ -39,6 +43,8 @@ const data = [{
   name: 'project3',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
   img: 'images/Snapshoot Portfolio.svg',
+  mobileImg: '',
+  displayImg: '',
   technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   firstlineTitle: 'Multi-Post Stories',
   secondlineTitle: 'Gain+Glory',
@@ -53,6 +59,8 @@ const data = [{
   secondlineTitle: 'Gain+Glory',
   languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
   img: 'images/Snapshoot Portfolio.svg',
+  mobileImg: '',
+  displayImg: '',
   technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   linkLiveVersion: 'https://k0ppai.github.io/',
   linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
@@ -61,6 +69,8 @@ const data = [{
   name: 'project5',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
   img: 'images/Snapshoot Portfolio.svg',
+  mobileImg: '',
+  displayImg: '',
   technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   firstlineTitle: 'Multi-Post Stories',
   secondlineTitle: 'Gain+Glory',
@@ -69,22 +79,24 @@ const data = [{
   linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
 },
 {
-  name: 'project6',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
-  img: 'images/Snapshoot Portfolio.svg',
-  firstlineTitle: 'Multi-Post Stories',
-  secondlineTitle: 'Gain+Glory',
-  languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-  technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  linkLiveVersion: 'https://k0ppai.github.io/',
-  linkSource: 'https://github.com/K0ppai/portfolio-setup-mobile-1',
+  name: 'Summit of Greatness',
+  description: 'This is a project to showcase our HTML and CSS skills.This project is about inviting like-minded individuals who want to improve every aspect of their lives, to join the Summit of Greatness. The Summit of Greatness is a 5-day life-changing event that will help you unleash your inner hero and unlock the tools to reach your full potential.',
+  img: 'images/responsive-desktop.jpg',
+  mobileImg: 'images/responsive-mobile.jpg',
+  displayImg: 'images/responsive-desktop.jpg',
+  firstlineTitle: 'Summit of Greatness',
+  secondlineTitle: 'Demo',
+  languages: ['Bootstrap', 'CSS', 'JavaScript', 'HTML'],
+  technologies: ['NPM', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Gh-pages'],
+  linkLiveVersion: 'https://k0ppai.github.io/first-capstone-project/',
+  linkSource: 'https://github.com/K0ppai/first-capstone-project',
 },
 ];
 const popUp = (i) => {
   const html = document.createElement('div');
   const mediaQuery = window.matchMedia('(max-width: 768px)');
   if (mediaQuery.matches) {
-    data[i].img = 'images/popupmobile.svg';
+    data[i].img = data[i].mobileImg;
     data[i].technologies[0] = 'Ruby on Rails';
     data[i].technologies[1] = 'CSS';
     data[i].technologies[2] = 'JavaScript';
@@ -136,8 +148,7 @@ insertAfter(div, parentElement.lastElementChild);
 for (let i = 0; i < 6; i += 1) {
   div.innerHTML += `
   <div id="project${i}" class="work-cards animation-left">
-        <div class="img-placeholder">
-        </div>
+        
         <div class="work-desc">
           <p>${data[i].firstlineTitle}<br>${data[i].secondlineTitle}</p>
           <div>
