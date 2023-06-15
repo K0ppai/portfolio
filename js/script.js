@@ -81,9 +81,9 @@ const data = [{
 {
   name: 'Summit of Greatness',
   description: 'This is a project to showcase our HTML and CSS skills.This project is about inviting like-minded individuals who want to improve every aspect of their lives, to join the Summit of Greatness. The Summit of Greatness is a 5-day life-changing event that will help you unleash your inner hero and unlock the tools to reach your full potential.',
-  desktopImg: 'images/responsive-desktop.jpg',
-  mobileImg: 'images/responsive-mobile.jpg',
-  displayImg: 'images/responsive-desktop.jpg',
+  desktopImg: 'images/desktop-project5.png',
+  mobileImg: 'images/mobile-project5.png',
+  displayImg: 'images/display-desktop.jpg',
   firstlineTitle: 'Summit of Greatness',
   secondlineTitle: 'Demo',
   languages: ['Bootstrap', 'CSS', 'JavaScript', 'HTML'],
@@ -106,7 +106,9 @@ const popUp = (i) => {
         <div class="close-container">
           <button type="button" class="close-button">&times;</button>
         </div>
-        <img src="${data[i].desktopImg}" id="project-img">
+        <div class="project-img-container">
+          <img src="${data[i].desktopImg}" id="project-img">
+        </div>
         <div class="project-title-container">
           <h2>${data[i].name}</h2>
           <div class="see-live-container">
