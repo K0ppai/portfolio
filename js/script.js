@@ -16,7 +16,7 @@ const btn = document.querySelectorAll('.seeproject');
 const data = [{
   name: 'Keeping track of hundreds of components',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
-  img: 'images/Snapshoot Portfolio.svg',
+  desktopImg: 'images/Snapshoot Portfolio.svg',
   mobileImg: '',
   displayImg: '',
   firstlineTitle: 'Multi-Post Stories',
@@ -29,7 +29,7 @@ const data = [{
 {
   name: 'Project2',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
-  img: 'images/Snapshoot Portfolio.svg',
+  desktopImg: 'images/Snapshoot Portfolio.svg',
   mobileImg: '',
   displayImg: '',
   firstlineTitle: 'Multi-Post Stories',
@@ -42,7 +42,7 @@ const data = [{
 {
   name: 'project3',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
-  img: 'images/Snapshoot Portfolio.svg',
+  desktopImg: 'images/Snapshoot Portfolio.svg',
   mobileImg: '',
   displayImg: '',
   technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
@@ -58,7 +58,7 @@ const data = [{
   firstlineTitle: 'Multi-Post Stories',
   secondlineTitle: 'Gain+Glory',
   languages: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-  img: 'images/Snapshoot Portfolio.svg',
+  desktopImg: 'images/Snapshoot Portfolio.svg',
   mobileImg: '',
   displayImg: '',
   technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
@@ -68,7 +68,7 @@ const data = [{
 {
   name: 'project5',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
-  img: 'images/Snapshoot Portfolio.svg',
+  desktopImg: 'images/Snapshoot Portfolio.svg',
   mobileImg: '',
   displayImg: '',
   technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
@@ -81,7 +81,7 @@ const data = [{
 {
   name: 'Summit of Greatness',
   description: 'This is a project to showcase our HTML and CSS skills.This project is about inviting like-minded individuals who want to improve every aspect of their lives, to join the Summit of Greatness. The Summit of Greatness is a 5-day life-changing event that will help you unleash your inner hero and unlock the tools to reach your full potential.',
-  img: 'images/responsive-desktop.jpg',
+  desktopImg: 'images/responsive-desktop.jpg',
   mobileImg: 'images/responsive-mobile.jpg',
   displayImg: 'images/responsive-desktop.jpg',
   firstlineTitle: 'Summit of Greatness',
@@ -96,7 +96,7 @@ const popUp = (i) => {
   const html = document.createElement('div');
   const mediaQuery = window.matchMedia('(max-width: 768px)');
   if (mediaQuery.matches) {
-    data[i].img = data[i].mobileImg;
+    data[i].desktopImg = data[i].mobileImg;
     data[i].technologies[0] = 'Ruby on Rails';
     data[i].technologies[1] = 'CSS';
     data[i].technologies[2] = 'JavaScript';
@@ -106,7 +106,7 @@ const popUp = (i) => {
         <div class="close-container">
           <button type="button" class="close-button">&times;</button>
         </div>
-        <img src="${data[i].img}" id="project-img">
+        <img src="${data[i].desktopImg}" id="project-img">
         <div class="project-title-container">
           <h2>${data[i].name}</h2>
           <div class="see-live-container">
