@@ -39,9 +39,9 @@
 
 
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo" id="live-demo"></a>
 
-- https://k0ppai.github.io/
+- Click this [link](https://k0ppai.github.io/portfolio/) for live view.
 
 
 
