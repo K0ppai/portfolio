@@ -404,9 +404,7 @@ h4 {
   border: none;
 }
 
-.project-img-container {
-  height: 65%;
-}
+
 
 .see-project-container #project-img {
   width: 100%;
@@ -712,6 +710,10 @@ h4 {
 
   .animation-left:hover {
     translate: 8px 8px;
+  }
+
+  .project-img-container {
+    height: 65%;
   }
 
   .container {
