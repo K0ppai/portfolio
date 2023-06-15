@@ -163,6 +163,7 @@ header {
   background-image: url(/images/display-image-project5.jpg);
   background-size: cover;
   background-position: 0 40%;
+  background-repeat: none;
 }
 
 .display-image {

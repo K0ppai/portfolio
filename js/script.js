@@ -148,7 +148,6 @@ insertAfter(div, parentElement.lastElementChild);
 for (let i = 0; i < 6; i += 1) {
   div.innerHTML += `
   <div id="project${i}" class="work-cards animation-left">
-        
         <div class="work-desc">
           <p>${data[i].firstlineTitle}<br>${data[i].secondlineTitle}</p>
           <div>
